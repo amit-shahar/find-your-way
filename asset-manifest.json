@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/find-your-way/static/css/main.790d5ea9.chunk.css",
+    "main.js": "/find-your-way/static/js/main.f26960d1.chunk.js",
+    "main.js.map": "/find-your-way/static/js/main.f26960d1.chunk.js.map",
+    "runtime-main.js": "/find-your-way/static/js/runtime-main.d4ef9777.js",
+    "runtime-main.js.map": "/find-your-way/static/js/runtime-main.d4ef9777.js.map",
+    "static/css/2.31461e4f.chunk.css": "/find-your-way/static/css/2.31461e4f.chunk.css",
+    "static/js/2.347129ad.chunk.js": "/find-your-way/static/js/2.347129ad.chunk.js",
+    "static/js/2.347129ad.chunk.js.map": "/find-your-way/static/js/2.347129ad.chunk.js.map",
+    "static/js/3.6cfa1907.chunk.js": "/find-your-way/static/js/3.6cfa1907.chunk.js",
+    "static/js/3.6cfa1907.chunk.js.map": "/find-your-way/static/js/3.6cfa1907.chunk.js.map",
+    "index.html": "/find-your-way/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/find-your-way/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.790d5ea9.chunk.css.map": "/find-your-way/static/css/main.790d5ea9.chunk.css.map",
+    "static/js/2.347129ad.chunk.js.LICENSE.txt": "/find-your-way/static/js/2.347129ad.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/find-your-way/static/media/homeBackgroud2.7428a289.jpg",
+    "static/media/themePhoto.755d1b3d.jpg": "/find-your-way/static/media/themePhoto.755d1b3d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4ef9777.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.347129ad.chunk.js",
+    "static/css/main.790d5ea9.chunk.css",
+    "static/js/main.f26960d1.chunk.js"
+  ]
+}
