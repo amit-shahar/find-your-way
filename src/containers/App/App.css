@@ -1,0 +1,26 @@
+/*html {*/
+/*    background-image: url("./src/containers/Register/RegisterBackground.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*}*/
+
+body {
+    align-content: center;
+    margin: 0;
+    font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+    color: #f1e2c0;
+    text-shadow: 1px 1px 6px black;
+}

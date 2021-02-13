@@ -1,0 +1,11 @@
+html {
+    width: 100%;
+    background-image: url("landing.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#signinForm {
+    background-color: rgba(255,255,255,0.6);
+}

@@ -1,0 +1,10 @@
+#head {
+    width: 100%;
+    background-image: url("headImg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}

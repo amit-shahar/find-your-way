@@ -5,8 +5,8 @@ const WhosIn = ({ users }) => {
 
     return (
         <div>
-            <div style={{justifyContent: 'center'}}>
-                    <p className="f2" style={{display: 'flex', justifyContent: 'center'}}>
+            <div className='tc' style={{justifyContent: 'center'}}>
+                    <p className="f2 f1-ns flex justify-center white " style={{fontFamily:'Roboto Slab'}}>
                         {'Who\'s in already?'}
                     </p>
                 {
