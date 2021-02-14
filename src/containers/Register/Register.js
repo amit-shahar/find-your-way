@@ -3,8 +3,9 @@ import './Register.css';
 
 class Register extends Component
 {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+
         this.state = {
             email: "",
             name: "",
@@ -13,12 +14,17 @@ class Register extends Component
         };
     }
 
+    handleSubmit = (event) => {
+        // TODO check data
+        this.props.history.push('/signin');
+    }
+
     render() {
         return (
-            <div id = "pageRegister" className='w-100 h-100'>
+            <div className= "register" >
                 <article id="registerForm" className="br1 ba b--black-10 mv4 pa4 w-100 w-50-m w-25-l mw6 shadow-5 center tc">
                     <main className="pa4 black-80 ">
-                        <form className="measure">
+                        <div className="measure">
                             <fieldset id="register" className="ba b--transparent ph0 mh0">
                                 <legend className="f1 fw6 ph0 mh0">Register</legend>
                                 <legend className="f6 fw6 ph0 mh0">It's super easy and not secure at all!</legend>
@@ -40,13 +46,13 @@ class Register extends Component
                             </fieldset>
                             <div className="">
                                 <input
-                                    onClick={() => onRouteChange('signin')}
+                                    onClick={()=>this.handleSubmit()}
                                     className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                                     type="submit"
                                     value="That's is, Register"
                                 />
                             </div>
-                        </form>
+                        </div>
                     </main>
                 </article>
             </div>

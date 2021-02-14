@@ -1,28 +1,32 @@
 import React, {Component} from 'react';
 import './Join.css';
-import Home from "../Home/Home";
-import {BrowserRouter, Route} from "react-router-dom";
 
 class Join extends Component
 {
+    handleSubmit = (event) => {
+        // TODO check data
+        this.props.history.push('/');
+    }
+
     render() {
         return (
-            <div id="page">
+            <div >
                 <article id="joiningForm" className="br1 ba b--black-10 mv4 pa4 w-100 w-50-m w-25-l mw6 shadow-5 center tc" >
                     <main className="pa4 black-80 ">
-                        <form className="measure">
+                        <div className="measure">
                             <fieldset id="joining" className="ba b--transparent ph0 mh0">
-                                <legend className="f1 fw6 ph0 mh0">JoinButton this amazing race!</legend>
+                                <legend className="f1 fw6 ph0 mh0">Join this amazing race!</legend>
                                 <label className="db fw6 lh-copy f6" htmlFor="name">So, who are you joining with?</label>
                             </fieldset>
                             <div className="">
                                 <input
+                                    onClick={()=>this.handleSubmit()}
                                     className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                                     type="submit"
-                                    value="JoinButton"
+                                    value="Join"
                                 />
                             </div>
-                        </form>
+                        </div>
                     </main>
                 </article>
             </div>

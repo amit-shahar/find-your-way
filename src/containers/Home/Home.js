@@ -5,12 +5,10 @@ import Theme from "../../components/Theme/Theme";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import WhiteSection from "../../components/WhiteSection/WhiteSection";
 import Details from "../../components/Details/Details";
-import JoinButton from "../../components/Join/JoinButton";
+import JoinButton from "../../components/JoinButton/JoinButton";
 import ParticipantsSection from "../../components/ParticipantsSection/ParticipantsSection";
 import WhosIn from "../../components/WhosIn/WhosIn";
 import { users } from "../../users";
-import { BrowserRouter, Route} from 'react-router-dom';
-import {useHistory} from 'react-router-dom'
 
 class Home extends Component
 {
@@ -27,6 +25,15 @@ class Home extends Component
             .then(users => {this.setState({ users:users })})
     }
 
+    onRouteChange = (route) => {
+        // TODO check data
+        if (route === 'join')
+            this.props.history.push('/join');
+        else if (route === 'signin')
+            this.props.history.push('/signin');
+        else if (route === 'register')
+            this.props.history.push('/register');
+    }
 
     render()
     {
@@ -43,12 +50,12 @@ class Home extends Component
         else return (
             <div className="Home">
                 <HeadSection>
-                    <NavigationBar user={this.props.user} loggedInStatus={this.props.loggedInStatus} />
+                    <NavigationBar user={this.props.user} loggedInStatus={this.props.loggedInStatus} onRouteChange={this.onRouteChange}/>
                     <Theme/>
                 </HeadSection>
                 <WhiteSection>
                     <Details/>
-                    <JoinButton/>
+                    <JoinButton onRouteChange={this.onRouteChange}/>
                 </WhiteSection>
                 <ParticipantsSection>
                     <WhosIn users={this.state.users}/>
